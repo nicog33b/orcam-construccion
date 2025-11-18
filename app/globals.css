@@ -1,26 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+                
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+.bg-1{
+  background-color:#102348;
+}
+.fc-1{
+  color:#102348;
+}
+
+/* Utility: offset content under fixed header */
+.page-content {
+  padding-top: 4rem; /* ensures content isn't hidden behind header */
+}
+
+/* Header / Hero helpers */
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  /* subtle darkening toward bottom to improve text contrast */
+  background: linear-gradient(180deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.32) 100%);
+  pointer-events: none;
+}
+
+/* Subtle but professional text enhancements for hero */
+.hero-text {
+  /* slightly increase contrast on busy images */
+  text-shadow: 0 4px 14px rgba(44, 70, 73, 0.34);
+  -webkit-text-stroke: 0.35px rgba(223, 217, 56, 0.1);
+}
+.hero-sub {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.28);
 }
