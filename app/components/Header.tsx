@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Menu, X, Phone, MessageSquare } from "lucide-react"
+import { Menu, X, MessageSquare } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -41,6 +41,8 @@ export default function Header() {
     { label: "Beneficios", href: "#beneficios" },
     { label: "Servicios", href: "#servicios" },
     { label: "Proyectos", href: "#proyectos" },
+    { label: "Nosotros", href: "#nosotros" },
+    { label: "FAQ", href: "#faq" },
   ]
 
   return (
@@ -68,7 +70,7 @@ export default function Header() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="relative text-sm font-semibold text-gray-700 hover:text-[#102348] transition-all duration-300 group"
+                  className="relative text-sm font-semibold text-gray-700 hover:text-[#102348] transition-all duration-300 group focus:outline-none focus:ring-2 focus:ring-[#102348] focus:ring-offset-2 rounded px-2 py-1"
                 >
                   <span className="relative z-10">{item.label}</span>
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#102348] transition-all duration-300 group-hover:w-full" />
@@ -79,11 +81,13 @@ export default function Header() {
             {/* CTA and Phone */}
             <div className="flex items-center gap-4">
               <a
-                href="tel:+59898041654"
-                className="hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-lg border-2 border-[#102348] text-[#102348] hover:bg-[#102348] hover:text-white hover:shadow-lg hover:shadow-[#102348]/20 transition-all duration-300 font-semibold text-sm group"
+                href="https://wa.me/59895732108"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-lg bg-green-500 text-white hover:bg-green-600 hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300 font-semibold text-sm group focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-offset-2"
               >
-                <Phone size={16} className="transition-transform duration-300 group-hover:rotate-12" />
-                <span>098041654</span>
+                <MessageSquare size={16} className="transition-transform duration-300 group-hover:rotate-12" />
+                <span>WhatsApp</span>
               </a>
 
               {/* Mobile Menu Button */}
@@ -116,11 +120,13 @@ export default function Header() {
                 </Link>
               ))}
               <a
-                href="tel:+59898041654"
-                className="flex items-center gap-2 mx-4 px-4 py-3 bg-[#102348] text-white rounded-lg font-semibold hover:bg-[#0d1a38] hover:shadow-lg transition-all duration-300 group"
+                href="https://wa.me/59895732108"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 mx-4 px-4 py-3 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 hover:shadow-lg transition-all duration-300 group"
               >
-                <Phone size={18} className="transition-transform duration-300 group-hover:rotate-12" />
-                Llamar ahora
+                <MessageSquare size={18} className="transition-transform duration-300 group-hover:rotate-12" />
+                WhatsApp
               </a>
             </div>
           )}
@@ -163,7 +169,12 @@ export default function Header() {
 
 
           {/* Main CTA */}
-          <button className="group relative px-10 py-4 mt-6 rounded-xl bg-linear-to-r from-[#102348] via-[#31558b] to-[#5b72a1] text-white font-bold text-lg shadow-2xl shadow-[#102348]/40 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[#102348]/60 hover:scale-105 animate-in fade-in-0 slide-in-from-bottom-4 delay-500">
+          <a
+            href="https://wa.me/59895732108"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative px-10 py-4 mt-6 rounded-xl bg-linear-to-r from-[#102348] via-[#31558b] to-[#5b72a1] text-white font-bold text-lg shadow-2xl shadow-[#102348]/40 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[#102348]/60 hover:scale-105 animate-in fade-in-0 slide-in-from-bottom-4 delay-500 inline-block"
+          >
             <div className="absolute inset-0 bg-linear-to-r from-[#0d1a38] via-[#102348] to-[#0d1a38] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
               <div className="absolute inset-0 bg-linear-to-r from-transparent via-white to-transparent animate-shimmer" />
@@ -172,7 +183,7 @@ export default function Header() {
               <span>Solicitar presupuesto gratuito</span>
               <span className="transition-transform duration-300 group-hover:translate-x-2 text-xl">→</span>
             </span>
-          </button>
+          </a>
 
           {/* Slide Indicators */}
           <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex gap-2.5 z-20">

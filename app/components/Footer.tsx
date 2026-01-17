@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Facebook, Linkedin, Instagram, ExternalLink, Heart, MessageCircle } from "lucide-react"
+import { Mail, Facebook, MessageCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -9,28 +9,18 @@ export default function Footer() {
     {
       title: "Navegación",
       links: [
-        { label: "Inicio", href: "#" },
-        { label: "Servicios", href: "#" },
-        { label: "Proyectos", href: "#" },
-        { label: "Nosotros", href: "#" },
-        { label: "Contacto", href: "#" },
-      ],
-    },
-    {
-      title: "Servicios",
-      links: [
-        { label: "Obras Nuevas", href: "#" },
-        { label: "Reformas en General", href: "#" },
-        { label: "Llave en Mano", href: "#" },
-        { label: "Reciclajes", href: "#" },
+        { label: "Inicio", href: "/" },
+        { label: "Beneficios", href: "#beneficios" },
+        { label: "Servicios", href: "#servicios" },
+        { label: "Proyectos", href: "#proyectos" },
+        { label: "Nosotros", href: "#nosotros" },
+        { label: "FAQ", href: "#faq" },
       ],
     },
     {
       title: "Legal",
       links: [
-        { label: "Términos y Condiciones", href: "#" },
-        { label: "Política de Privacidad", href: "#" },
-        { label: "Política de Cookies", href: "#" },
+        { label: "Política de Privacidad", href: "/privacy-policy" },
       ],
     },
   ]
@@ -48,11 +38,11 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="md:col-span-2 space-y-6">
             <Link href="/" className="inline-block group">
-              <Image 
-                src="/orcam_logo.png" 
-                alt="Orcam Construcciones Logo" 
-                className="h-16 w-auto transition-all duration-300 group-hover:scale-105" 
-                width={120} 
+              <Image
+                src="/orcam_logo.png"
+                alt="Orcam Construcciones Logo"
+                className="h-16 w-auto transition-all duration-300 group-hover:scale-105"
+                width={120}
                 height={80}
               />
             </Link>
@@ -105,15 +95,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 py-10 border-t border-b border-[#102348]/10">
           {/* Phone */}
           <a
-            href="tel:+59823558304"
-            className="group flex items-center gap-4 p-5 rounded-xl bg-[#102348]/5 hover:bg-[#102348]/8 transition-all duration-300 border border-[#102348]/10 hover:border-[#102348]/20 hover:-translate-y-1"
+            href="https://wa.me/59895732108"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-4 p-5 rounded-xl bg-green-50 hover:bg-green-100 transition-all duration-300 border border-green-200 hover:border-green-400 hover:-translate-y-1"
           >
-            <div className="w-12 h-12 rounded-lg bg-[#102348]/10 group-hover:bg-[#102348]/15 flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-              <Phone className="w-6 h-6 text-[#102348]" strokeWidth={2} />
+            <div className="w-12 h-12 rounded-lg bg-green-200 group-hover:bg-green-300 flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+              <MessageCircle className="w-6 h-6 text-green-700" strokeWidth={2} />
             </div>
             <div className="flex-1">
-              <p className="text-xs text-gray-500 font-semibold uppercase tracking-wide">Teléfono Línea</p>
-              <p className="font-bold text-gray-900 text-sm">23558304</p>
+              <p className="text-xs text-green-700 font-semibold uppercase tracking-wide">WhatsApp</p>
+              <p className="font-bold text-gray-900 text-sm">095732108</p>
             </div>
           </a>
 
@@ -162,10 +154,10 @@ export default function Footer() {
             {/* Credit */}
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span>Desarrollado por</span>
-              <a 
-                href="https://kuberalabs.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://kuberalabs.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-bold text-[#102348] hover:underline transition-all duration-300"
               >
                 KuberaLabs
@@ -184,7 +176,7 @@ export default function Footer() {
               <p className="text-gray-600 text-sm font-medium">Solicita tu presupuesto gratuito sin compromiso</p>
             </div>
             <a target="_blank"
-                rel="noopener noreferrer"
+              rel="noopener noreferrer"
               href="https://wa.me/59895732108"
               className="group relative px-8 py-4 rounded-xl bg-linear-to-r from-green-500 to-green-600 text-white font-bold transition-all duration-300 hover:shadow-lg hover:shadow-green-500/40 hover:-translate-y-1 hover:scale-105 whitespace-nowrap overflow-hidden"
             >

@@ -5,24 +5,24 @@
       "title": "Transformando Espacios",
       "subtitle": "Construcción y reforma con precisión moderna. Cada detalle cuenta en tu proyecto.",
       "image": "/placeholder.svg?height=1080&width=1920",
-      "buttonText": "Conocer Proyectos",
-      "buttonLink": "#proyectos"
+      "buttonText": "Solicitar WhatsApp",
+      "buttonLink": "https://wa.me/59895732108"
     },
     {
       "id": "slide-2",
       "title": "Calidad Garantizada",
       "subtitle": "Materiales premium y profesionales especializados para tu confianza.",
       "image": "/placeholder.svg?height=1080&width=1920",
-      "buttonText": "Consultar Presupuesto",
-      "buttonLink": "#contacto"
+      "buttonText": "Enviar mensaje",
+      "buttonLink": "https://wa.me/59895732108"
     },
     {
       "id": "slide-3",
       "title": "Diseño & Funcionalidad",
       "subtitle": "Donde la estética se encuentra con la ingeniería de precisión.",
       "image": "/placeholder.svg?height=1080&width=1920",
-      "buttonText": "Ver Galería",
-      "buttonLink": "#galeria"
+      "buttonText": "Contactar por WhatsApp",
+      "buttonLink": "https://wa.me/59895732108"
     }
   ]
 }

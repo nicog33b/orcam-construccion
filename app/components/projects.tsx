@@ -1,7 +1,8 @@
 "use client"
 
 import { useState, useRef } from "react"
-import { ChevronLeft, ChevronRight, MapPin, Calendar, Award } from "lucide-react"
+import { ChevronLeft, ChevronRight, MapPin, Calendar } from "lucide-react"
+import Image from "next/image"
 import { projectsData } from "../json/projectData"
 
 export default function ProjectsSection() {
@@ -21,14 +22,6 @@ export default function ProjectsSection() {
     setActiveProject((prev) => (prev - 1 + projectsData.length) % projectsData.length)
     setActiveImageIndex(0)
     scrollToGallery()
-  }
-
-  const nextImage = () => {
-    setActiveImageIndex((prev) => (prev + 1) % currentProject.images.length)
-  }
-
-  const prevImage = () => {
-    setActiveImageIndex((prev) => (prev - 1 + currentProject.images.length) % currentProject.images.length)
   }
 
   const scrollToGallery = () => {
@@ -54,9 +47,10 @@ export default function ProjectsSection() {
           <div className="relative group" ref={galleryRef}>
             {/* Main Image */}
             <div className="relative bg-slate-200 rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl aspect-4/3 md:aspect-video">
-              <img
+              <Image
                 src={currentProject.images[activeImageIndex] || "/placeholder.svg"}
                 alt={`${currentProject.title} - Imagen ${activeImageIndex + 1}`}
+                fill
                 className="w-full h-full object-contain transition-transform duration-500 bg-black"
               />
               {/* Project Info Overlay */}
@@ -97,9 +91,10 @@ export default function ProjectsSection() {
                         : "border-slate-200 hover:border-[#102348]/50 active:scale-95"
                     }`}
                   >
-                    <img
+                    <Image
                       src={image || "/placeholder.svg"}
                       alt={`Thumbnail ${idx + 1}`}
+                      fill
                       className="w-full h-full object-cover"
                     />
                   </button>
@@ -148,9 +143,10 @@ export default function ProjectsSection() {
               >
                 {/* Card Image */}
                 <div className="relative h-44 md:h-56 bg-slate-300">
-                  <img
+                  <Image
                     src={project.images[0] || "/placeholder.svg"}
                     alt={project.title}
+                    fill
                     className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 bg-black"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent" />
