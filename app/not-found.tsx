@@ -78,7 +78,7 @@ export default function NotFound() {
 
           {/* WhatsApp CTA */}
           <a
-            href="https://wa.me/59895732108"
+            href="https://wa.me/59899062837"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative px-8 py-4 rounded-xl bg-gradient-to-r from-green-500 to-green-600 text-white font-bold transition-all duration-300 hover:shadow-lg hover:shadow-green-500/40 hover:-translate-y-1 overflow-hidden"

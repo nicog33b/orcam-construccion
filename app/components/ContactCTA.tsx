@@ -1,6 +1,7 @@
 "use client"
 
-import { MessageCircle, Phone, MapPin } from "lucide-react"
+import { Phone, MapPin } from "lucide-react"
+import { SiWhatsapp } from "react-icons/si"
 import { useState, FormEvent } from "react"
 
 export default function CTASection() {
@@ -23,7 +24,7 @@ export default function CTASection() {
 
     // Construir URL de WhatsApp con datos del formulario
     const message = `Hola, soy ${formData.nombre}. ${formData.mensaje}`
-    const whatsappUrl = `https://wa.me/59895732108?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/59899062837?text=${encodeURIComponent(message)}`
 
     // Abrir WhatsApp
     window.open(whatsappUrl, "_blank")
@@ -49,15 +50,15 @@ export default function CTASection() {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* WhatsApp Card */}
           <a
-            href="https://wa.me/59895732108"
+            href="https://wa.me/59899062837"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/10 hover:bg-white/15 backdrop-blur-sm rounded-xl p-8 text-center transition-all hover:scale-105 group"
           >
-            <MessageCircle className="w-12 h-12 text-green-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+            <SiWhatsapp className="w-12 h-12 text-green-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-semibold text-white mb-2">WhatsApp</h3>
             <p className="text-slate-300 mb-4">Respuesta rápida</p>
-            <p className="text-2xl font-bold text-white">094 681 285</p>
+            <p className="text-2xl font-bold text-white">099 062 837</p>
           </a>
 
           {/* Phone Card */}
@@ -65,7 +66,7 @@ export default function CTASection() {
             <Phone className="w-12 h-12 text-blue-400 mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-white mb-2">Teléfono</h3>
             <p className="text-slate-300 mb-4">De lunes a viernes</p>
-            <p className="text-2xl font-bold text-white">094 681 285</p>
+            <p className="text-2xl font-bold text-white">099 062 837</p>
           </div>
 
           {/* Location Card */}
@@ -135,13 +136,7 @@ export default function CTASection() {
               type="submit"
               className="w-full px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 focus:outline-none focus:ring-4 focus:ring-green-300"
             >
-              <svg
-                className="w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-3.055 2.309-3.955 6.7-2.01 10.369 1.919 3.595 5.825 5.194 9.604 3.985.735-.201 1.452-.547 2.089-.986l.064-.041 4.118.308 1.281-3.823-.041-.064c.537-1.004.997-2.314.997-3.468C19.884 9.572 17.313 6.979 14.051 6.979Z" />
-              </svg>
+              <SiWhatsapp className="w-5 h-5" />
               Enviar por WhatsApp
             </button>
           </form>

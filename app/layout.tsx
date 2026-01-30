@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import BackToTop from "./components/BackToTop";
 import Footer from "./components/Footer";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 // ⚡ Static generation global configuration
 export const revalidate = false; // No usar ISR - completamente estático
@@ -13,7 +14,7 @@ const siteUrl = "https://orcamconstrucciones.com";
 const siteName = "Orcam Construcciones";
 const defaultTitle = `${siteName} | Refacciones y Obra Nueva en Uruguay`;
 const defaultDescription =
-  "Orcam Construcciones: refacciones generales y obra nueva en Uruguay. Baños completos, reformas integrales e instalaciones (electricidad, cañerías, revestimientos y carpintería). Presupuestos sin cargo. WhatsApp: 094 681 285.";
+  "Orcam Construcciones: refacciones generales y obra nueva en Uruguay. Baños completos, reformas integrales e instalaciones (electricidad, cañerías, revestimientos y carpintería). Presupuestos sin cargo. WhatsApp: 099 062 837.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -124,7 +125,7 @@ export default function RootLayout({
     name: siteName,
     url: siteUrl,
     image: `${siteUrl}/og.jpg`,
-    telephone: "+59894681285",
+    telephone: "+59899062837",
     address: {
       "@type": "PostalAddress",
       addressCountry: "UY",
@@ -155,6 +156,7 @@ export default function RootLayout({
         <div id="top" />
         <Header />
         <main className="page-content">{children}</main>
+        <FloatingWhatsApp />
         <BackToTop />
         <Footer />
       </body>

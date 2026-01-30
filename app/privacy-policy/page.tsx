@@ -74,7 +74,7 @@ export default function PrivacyPolicy() {
               <li>Opt-out de comunicaciones futuras</li>
             </ul>
             <p className="mt-4">
-              Para ejercer estos derechos, contactanos por WhatsApp 094 681 285.
+              Para ejercer estos derechos, contactanos por WhatsApp 099 062 837.
             </p>
           </section>
 
@@ -84,7 +84,7 @@ export default function PrivacyPolicy() {
               Si tienes preguntas sobre esta política de privacidad, puedes contactarnos:
             </p>
             <ul className="list-disc list-inside space-y-2 mt-2">
-              <li>WhatsApp: 094 681 285</li>
+              <li>WhatsApp: 099 062 837</li>
               <li>Zona de cobertura: Montevideo y alrededores</li>
             </ul>
           </section>

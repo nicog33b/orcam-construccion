@@ -1,4 +1,5 @@
-import { Mail, Facebook, MessageCircle } from "lucide-react"
+import { Mail, Facebook } from "lucide-react"
+import { SiWhatsapp } from "react-icons/si"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -27,7 +28,7 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: Facebook, href: "https://www.facebook.com/orcamconstrucciones", label: "Facebook" },
-    { icon: MessageCircle, href: "https://wa.me/59895732108", label: "WhatsApp" },
+    { icon: SiWhatsapp, href: "https://wa.me/59899062837", label: "WhatsApp" },
   ]
 
   return (
@@ -95,31 +96,31 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 py-10 border-t border-b border-[#102348]/10">
           {/* Phone */}
           <a
-            href="https://wa.me/59895732108"
+            href="https://wa.me/59899062837"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-4 p-5 rounded-xl bg-green-50 hover:bg-green-100 transition-all duration-300 border border-green-200 hover:border-green-400 hover:-translate-y-1"
           >
             <div className="w-12 h-12 rounded-lg bg-green-200 group-hover:bg-green-300 flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-              <MessageCircle className="w-6 h-6 text-green-700" strokeWidth={2} />
+              <SiWhatsapp className="w-6 h-6 text-green-700" />
             </div>
             <div className="flex-1">
               <p className="text-xs text-green-700 font-semibold uppercase tracking-wide">WhatsApp</p>
-              <p className="font-bold text-gray-900 text-sm">095732108</p>
+              <p className="font-bold text-gray-900 text-sm">099062837</p>
             </div>
           </a>
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/59895732108"
+            href="https://wa.me/59899062837"
             className="group flex items-center gap-4 p-5 rounded-xl bg-green-50 hover:bg-green-100 transition-all duration-300 border border-green-200 hover:border-green-400 hover:-translate-y-1"
           >
             <div className="w-12 h-12 rounded-lg bg-green-200 group-hover:bg-green-300 flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-              <MessageCircle className="w-6 h-6 text-green-700" strokeWidth={2} />
+              <SiWhatsapp className="w-6 h-6 text-green-700" />
             </div>
             <div className="flex-1">
               <p className="text-xs text-green-700 font-semibold uppercase tracking-wide">WhatsApp</p>
-              <p className="font-bold text-gray-900 text-sm">095732108</p>
+              <p className="font-bold text-gray-900 text-sm">099062837</p>
             </div>
           </a>
 
@@ -177,12 +178,12 @@ export default function Footer() {
             </div>
             <a target="_blank"
               rel="noopener noreferrer"
-              href="https://wa.me/59895732108"
+              href="https://wa.me/59899062837"
               className="group relative px-8 py-4 rounded-xl bg-linear-to-r from-green-500 to-green-600 text-white font-bold transition-all duration-300 hover:shadow-lg hover:shadow-green-500/40 hover:-translate-y-1 hover:scale-105 whitespace-nowrap overflow-hidden"
             >
               <div className="absolute inset-0 bg-linear-to-r from-green-600 to-green-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
               <span className="relative flex items-center gap-2">
-                <MessageCircle size={20} strokeWidth={2.5} />
+                <SiWhatsapp size={20} />
                 Contactar por WhatsApp
               </span>
             </a>

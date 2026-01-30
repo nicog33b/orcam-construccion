@@ -184,7 +184,7 @@ export default function ProjectsSection() {
             Solicita un presupuesto gratuito y sin compromiso
           </p>
           <a
-            href="https://wa.me/59895732108"
+            href="https://wa.me/59899062837"
             className="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-[#102348] font-bold py-3 md:py-4 px-8 md:px-10 rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-xl text-sm md:text-base"
           >
             Contactar Ahora

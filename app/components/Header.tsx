@@ -1,7 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Menu, X, MessageSquare } from "lucide-react"
+import { Menu, X } from "lucide-react"
+import { SiWhatsapp } from "react-icons/si"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -81,12 +82,12 @@ export default function Header() {
             {/* CTA and Phone */}
             <div className="flex items-center gap-4">
               <a
-                href="https://wa.me/59895732108"
+                href="https://wa.me/59899062837"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-lg bg-green-500 text-white hover:bg-green-600 hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300 font-semibold text-sm group focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-offset-2"
               >
-                <MessageSquare size={16} className="transition-transform duration-300 group-hover:rotate-12" />
+                <SiWhatsapp size={16} className="transition-transform duration-300 group-hover:rotate-12" />
                 <span>WhatsApp</span>
               </a>
 
@@ -120,12 +121,12 @@ export default function Header() {
                 </Link>
               ))}
               <a
-                href="https://wa.me/59895732108"
+                href="https://wa.me/59899062837"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 mx-4 px-4 py-3 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 hover:shadow-lg transition-all duration-300 group"
               >
-                <MessageSquare size={18} className="transition-transform duration-300 group-hover:rotate-12" />
+                <SiWhatsapp size={18} className="transition-transform duration-300 group-hover:rotate-12" />
                 WhatsApp
               </a>
             </div>
@@ -170,7 +171,7 @@ export default function Header() {
 
           {/* Main CTA */}
           <a
-            href="https://wa.me/59895732108"
+            href="https://wa.me/59899062837"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative px-10 py-4 mt-6 rounded-xl bg-linear-to-r from-[#102348] via-[#31558b] to-[#5b72a1] text-white font-bold text-lg shadow-2xl shadow-[#102348]/40 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[#102348]/60 hover:scale-105 animate-in fade-in-0 slide-in-from-bottom-4 delay-500 inline-block"
@@ -180,6 +181,7 @@ export default function Header() {
               <div className="absolute inset-0 bg-linear-to-r from-transparent via-white to-transparent animate-shimmer" />
             </div>
             <span className="relative flex items-center gap-3">
+              <SiWhatsapp size={20} />
               <span>Solicitar presupuesto gratuito</span>
               <span className="transition-transform duration-300 group-hover:translate-x-2 text-xl">→</span>
             </span>
